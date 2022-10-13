@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  <title> GRID </title>
+#style{ color: red;
+size:medium;
+}
+.item1 { grid-area: header; }
+
+
+.item2 { 
+grid-area: block;
+font-size: large;
+background-color: blueviolet;}
+
+.item3 { grid-area: main; }
+.item4 { grid-area: right;
+font-weight: 900;
+font-size: larger;
+color: brown; 
+text-align: center;}
+.item5 { grid-area: mfooter; }
+.item6 { grid-area: footer; }
+
+
+.grid-container {
+  display: grid;
+  
+  grid-template-areas:
+    'header  header  header   header'
+    'main    right   block    block'
+    'footer  mfooter mfooter  mfooter';
+  gap: 5px;
+  background-color: black;
+  padding: 10px;
+}
+#myhead{
+  color:deeppink;
+  font-weight: 100;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  height: 500px;
+  width:auto;
+  padding: 30px 0;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="style">Grid Layout</h1>
+
+<h3> class task</h3>
+
+<div class="grid-container">
+  <div class="item1">
+    <br>
+    <h1 id="myhead">
+    Software Company</h1>
+    <br>
+<br>
+    Company profile
+Infinite Solutions is one of the few IT system integration, professional service and software development companies in Macedonia that works with Enterprise systems and companies. As a privately owned company, Infinite Solutions provides IT Consultancy, software design and development as well as professional services and hardware deployment and maintenance to the following verticals:
+<ul>
+Government (Local and Central)<br>
+Financial Services (insurance, banking and clearing house)<br>
+Telecommunications<br>
+Energy and Utilities<br>
+Health Care.<br>
+Education.<br>
+</ul>
+  </div>
+
+  <div class="item2"><h1>Our Services</h1>
+    <marquee id="mq1" width="60%" direction="down" height="100px">
+    Web Application Development.<br>
+    Mobile Application Development.<br>
+    </marquee>
+    <br> 
+    &nbsp;
+    &nbsp;
+    <marquee id="mq2" >
+    Cloud Consulting.<br>
+    DevOps Automation.<br>
+  </marquee>
+<br>
+&nbsp;
+&nbsp;
+  <marquee id="mq3" width="60%" direction="down" height="100px">
+    Software Prototyping.<br>
+    Quality Assurance.<br>
+    Systems Integration.
+  </marquee>
+ 
+  </div>
+  <div class="item3">
+    <BR>
+      <BR>
+        <BR>
+    <h2>Sign In</h2>
+    <BR>
+      <BR>
+    <form>
+      <label>NAME</label><BR>
+      <input type="text" id="name" name="username"><BR>
+      <label>PASSWORD</label><BR>
+      <input type="password" id="psw" name="userpassword"><BR>
+        <BR>
+      <button>Submit</button>
+      <BR>
+        </form>
+  </div>  
+  <div class="item4"><br>
+    <br>
+    <br>
+    <br>
+    <b>YOUR SATISFACTION IS OUR SUCCESS!</b>
+  </div>
+  <div class="item5"><br>
+    <br>
+   <img src="manimage.jpg" style= "display:cover">
+   
+  
+  </div>
+  <div class="item6"> <br>
+    <br><h2><i>Contact Details</i></h2>
+    <br>
+<br>
+    During our normal business hours (7:30am - 5:30pm CT),
+    our highly qualified team is available to assist you with any questions you may have.<br>
+   Call:
+    (800) 123-456</div>
+</div>
+
+
+</body>
+</html>
